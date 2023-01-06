@@ -1,5 +1,53 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+}
+.App button {
+  padding: 0.7rem 1.2rem;
+  color: #CCF;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  border: solid 1px #44F8;
+  background-color: #0053;
+  box-shadow: #44F8 0 0 8px;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+
+}
+.App button:hover {
+  border: solid 1px #44FA;
+  background-color: #008A;
+  box-shadow: #44FA 0 0 8px;
+}
+.App button:disabled {
+  box-shadow: none;
+  border: solid 1px #44F8;
+  background-color: #0053;
+  color: #CCF4;
+  cursor: default;
+}
+
+.App pre {
+  text-align: left;
+  font-family: monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0.8rem;
+  background-color: #000;
+  color: #FFFA;
+  margin-top: -0.8rem;
+}
+.App pre .comment {
+  color: #0C0;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.App pre .comment::before {
+  content: "// ";
+}
+.App pre.training,
+.App pre.training .comment {
+  color: #FFF4;
 }
 
 .App-header {
